@@ -13,7 +13,7 @@
 *         Logs all file transfers using the Logger utility.
 `Client (client.cpp)`
 
-*    Connects to the server, requests file listings, downloads files, and  uploads files.
+*     Connects to the server, requests file listings, downloads files, and  uploads files.
 `Makefile`
 
 *     Provides instructions for compiling and running the server and client programs.
