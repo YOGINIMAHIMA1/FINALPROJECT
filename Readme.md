@@ -6,14 +6,6 @@
 *         Aim - Network File Sharing Over Server and Client
 
 
-# Team Members
-* Mahima Bhardwaj
-* Diksha Kumari`
-* Sunny
-
-
-
-
 #        Content
 *       Introduction
 *       LOGGER UTILITY
@@ -115,9 +107,14 @@ Description: A well-known guide to network programming using sockets, covering b
 # 6. Development Environment:
 # GCC Compiler Documentation
 Description: Reference for using GCC to compile C++ programs, including specific flags and options relevant to the project.
-# URL: https://gcc.gnu.org/onlinedocs/
+`URL: https://gcc.gnu.org/onlinedocs/`
 # Linux Man Pages
 Description: Detailed documentation of system calls and functions used in the project, like close(), read(), and write().
 `URL: https://man7.org/linux/man-pages/`
+
+`Members`
+* Mahima Bhardwaj
+* Diksha Kumari
+* Sunny
 
 
