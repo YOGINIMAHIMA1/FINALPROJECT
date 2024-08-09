@@ -3,10 +3,10 @@
 #                                   Bug ID: 001
 #        Title: File list not displayed in client when LIST command is issued
 `Reported by: Mahima Bhardwaj, Diksha kumari ,Sunny`
-`Date: [8-8-24]`
-`Status: Open`
-`Severity: High`
-`Priority: High`
+* Date: [8-8-24]
+* Status: Open
+* Severity: High
+* Priority: High
 #                             Description:
 *  When the client issues the LIST command to the server, the client only displays * "Available files:" without listing any of the files present in the server's * directory. The expected behavior is for the client to display all available files in the server's directory.
 
