@@ -7,9 +7,9 @@
 
 
 # Team Members
-`Mahima Bhardwaj`
-`Diksha Kumari`
-`Sunny`
+* Mahima Bhardwaj
+* Diksha Kumari`
+* Sunny
 
 
 
@@ -26,7 +26,7 @@
 *        LIST
 *        Important Note
 *        logger
-*        
+       
 
 
 
