@@ -7,9 +7,9 @@
 
 
 # Team Members
-` Mahima Bhardwaj`
-` Diksha Kumari`
-`Sunny`
+* Mahima Bhardwaj
+* Diksha Kumari`
+* Sunny
 
 
 
@@ -83,7 +83,6 @@ The server binds to INADDR_ANY, which allows it to accept connections from any I
 * License for the Network File Sharing Server & Client Project to FinalProject Members.
 
 # References for the Network File Sharing Server & Client Project
-`When documenting a project, it's essential to include references that provide credit to any external resources, libraries, or documentation that were consulted or used during the development process. Here’s a general list of references that you might include:`
     `Main  Refrence`
   # Special Thanks To ShweatanK sir . This Project Has Been Made Under his Guidance.
 `1. Standard Libraries & APIs:`
