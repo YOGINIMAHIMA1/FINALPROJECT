@@ -33,7 +33,7 @@
 #          LIST: List the files available on the server.
 *  DOWNLOAD <filename>: Download the specified file from the server.
 *  UPLOAD <filename>: Upload the specified file to the server.
-`Summary`
+#                               Summary
 *   Make sure the client and server are on the same network or use the appropriate IP address when running them on different machines.
 The server binds to INADDR_ANY, which allows it to accept connections from any IP address.
 #                      logger 
