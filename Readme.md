@@ -5,6 +5,15 @@
 
 *         Aim - Network File Sharing Over Server and Client
 
+
+# Team Members
+`Mahima Bhardwaj`
+`Diksha Kumari`
+`Sunny`
+
+
+
+
 #        Content
 *       Introduction
 *       LOGGER UTILITY
@@ -75,14 +84,13 @@ The server binds to INADDR_ANY, which allows it to accept connections from any I
 
 # References for the Network File Sharing Server & Client Project
 `When documenting a project, it's essential to include references that provide credit to any external resources, libraries, or documentation that were consulted or used during the development process. Here’s a general list of references that you might include:`
-
+    `Main  Refrence`
+  # Special Thanks To ShweatanK sir . This Project Has Been Made Under his Guidance.
 `1. Standard Libraries & APIs:`
 # C++ Standard Library Documentation
-
 Description: The official reference for the C++ standard library functions and classes used in the project, such as <iostream>, <sys/socket.h>, and <netinet/in.h>.
 `URL: https://en.cppreference.com/w/`
 # POSIX Socket Programming
-
 Description: Reference for POSIX-compliant socket programming, including the use of functions like socket(), bind(), listen(), and accept().
 `URL: https://pubs.opengroup.org/onlinepubs/009695399/functions/xsh_chap02_02.html`
 # 2. Logging Library:
@@ -103,7 +111,6 @@ Beej's Guide to Network Programming
 Description: A well-known guide to network programming using sockets, covering both client and server code.
 `URL: https://beej.us/guide/bgnet/`
 # C++ Socket Programming Example
-
 `Description: An example of simple client-server socket programming in C++, used as a reference for understanding basic concepts and implementation.`
 `URL: https://www.geeksforgeeks.org/socket-programming-in-c-cpp/`
 # 6. Development Environment:
@@ -111,18 +118,7 @@ Description: A well-known guide to network programming using sockets, covering b
 Description: Reference for using GCC to compile C++ programs, including specific flags and options relevant to the project.
 # URL: https://gcc.gnu.org/onlinedocs/
 # Linux Man Pages
-
 Description: Detailed documentation of system calls and functions used in the project, like close(), read(), and write().
-URL: https://man7.org/linux/man-pages/
-7. Project Management:
-# Bug Tracking and Reporting
-* Description: Guidelines for creating a bug tracker report, including common practices for documenting issues in software development projects.
-`URL: https://www.atlassian.com/software/jira/guides/use-cases/bug-tracking`
-# 8. License Information:
-`MIT License`
-  * Description: The license under which this project is released, detailing the   permissions and limitations of using the software.
-`URL: https://opensource.org/licenses/MIT`
-9. Additional Resources:
-`Stack Overflow Discussions`
-* Description: General reference for troubleshooting, best practices, and community-driven answers to specific programming issues encountered during development.
-`URL: https://stackoverflow.com/`
+`URL: https://man7.org/linux/man-pages/`
+
+
