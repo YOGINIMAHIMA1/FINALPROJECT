@@ -21,9 +21,10 @@
 *       Refrence
 *       Team Members
 
-       # `Main  Refrence`
+      
+       # Main  Refrence
   # Special Thanks To ShweatanK sir . This Project Has Been Made Under his Guidance.
-      ` We would like to express our sincere gratitude to Shweatank Sir for his invaluable guidance and support throughout the development of this project. Under his mentorship, we have gained profound knowledge and practical experience in several key areas:`
+      # We would like to express our sincere gratitude to Shweatank Sir for his invaluable guidance and support throughout the development of this project. Under his mentorship, we have gained profound knowledge and practical experience in several key areas:`
 
 *  IPC (Inter-Process Communication): We have explored various IPC methods such as message queues, semaphores, and shared memory, learning how these techniques facilitate communication and synchronization between processes in complex systems.
 
@@ -76,7 +77,8 @@ The server binds to INADDR_ANY, which allows it to accept connections from any I
 *       The logger writes logs to server.log.
 
 #            Server Code
-*  #include <iostream>
+
+   #include <iostream>
    #include <fstream>
    #include <cstring>
    #include <thread>
@@ -190,7 +192,7 @@ int main() {
     return 0;
 }
 #             Client Code
-*   #include <iostream>
+ #include <iostream>
 #include <fstream>
 #include <cstring>
 #include <sys/socket.h>
