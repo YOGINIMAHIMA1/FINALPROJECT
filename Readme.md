@@ -22,7 +22,7 @@
       
        # Main  Refrence
   # Special Thanks To ShweatanK sir . This Project Has Been Made Under his Guidance.
-* We would like to express our sincere gratitude to Shweatank Sir for his invaluable guidance and support throughout the development of this project. Under his mentorship, we have gained profound knowledge and practical experience in several key areas:`
+`We would like to express our sincere gratitude to Shweatank Sir for his invaluable guidance and support throughout the development of this project. Under his mentorship, we have gained profound knowledge and practical experience in several key areas:`
 
 *  IPC (Inter-Process Communication): We have explored various IPC methods such as message queues, semaphores, and shared memory, learning how these techniques facilitate communication and synchronization between processes in complex systems.
 
