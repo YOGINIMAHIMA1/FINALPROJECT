@@ -10,7 +10,7 @@
 *       Introduction
 *        SERVER CODE
 *        CLIENT CODE
-*       LOGGER UTILITY
+*         Makefile
 *        ./server
 *        ./client
 *        Important Note
@@ -71,11 +71,8 @@ Code Execution: We acquired insights into optimizing code execution, including t
 #                               Note
 *   Make sure the client and server are on the same network or use the appropriate IP address when running them on different machines.
 The server binds to INADDR_ANY, which allows it to accept connections from any IP address.
-#                      logger 
-*       The logger writes logs to server.log.
 
-
-    
+   
 #  contribute
 * We encourage everyone to collaborate on this project
 * feel free to create issue if you find any Bug
