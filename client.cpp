@@ -73,13 +73,41 @@ int main() {
     // Connect to server
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(PORT);
-    if (inet_pton(AF_INET, "127.0.0.1", &serverAddr.sin_addr) <= 0) {
+    if (inet_pton(AF_INET, "127.0.0.1", &serverAddr.sin_addr) <= 0) { // Use appropriate IP address
         std::cerr << "Invalid address/Address not supported." << std::endl;
         return -1;
     }
 
     if (connect(socketFd, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) < 0) {
         std::cerr << "Connection error." << std::endl;
+        return -1;
+    }
+
+    // Authentication
+    std::string username, password;
+    std::cout << "Enter username: ";
+    std::getline(std::cin, username);
+    std::cout << "Enter password: ";
+    std::getline(std::cin, password);
+
+    // Send username and password
+    send(socketFd, username.c_str(), username.size(), 0);
+    usleep(100); // Small delay to ensure username is sent before password
+    send(socketFd, password.c_str(), password.size(), 0);
+
+    // Receive authentication response
+    char buffer[BUFFER_SIZE];
+    int bytesRead = recv(socketFd, buffer, BUFFER_SIZE, 0);
+    if (bytesRead > 0) {
+        buffer[bytesRead] = '\0';
+        if (strcmp(buffer, "AUTH_OK") != 0) {
+            std::cerr << "Authentication failed." << std::endl;
+            close(socketFd);
+            return -1;
+        }
+    } else {
+        std::cerr << "Error receiving authentication response." << std::endl;
+        close(socketFd);
         return -1;
     }
 

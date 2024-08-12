@@ -1,3 +1,6 @@
+
+
+
 #include <iostream>
 #include <fstream>
 #include <cstring>
@@ -10,10 +13,46 @@
 
 const int PORT = 8086;
 const int BUFFER_SIZE = 1024;
+const std::string USERNAME = "admin"; // Example username
+const std::string PASSWORD = "password"; // Example password
 
 void handleClient(int clientSocket, std::string clientIP) {
     char buffer[BUFFER_SIZE];
     int bytesRead;
+
+    // Authenticate client
+    std::string receivedUsername;
+    std::string receivedPassword;
+
+    // Receive username
+    bytesRead = recv(clientSocket, buffer, BUFFER_SIZE, 0);
+    if (bytesRead <= 0) {
+        std::cerr << "[" << clientIP << "] Error receiving username." << std::endl;
+        close(clientSocket);
+        return;
+    }
+    buffer[bytesRead] = '\0';
+    receivedUsername = buffer;
+
+    // Receive password
+    bytesRead = recv(clientSocket, buffer, BUFFER_SIZE, 0);
+    if (bytesRead <= 0) {
+        std::cerr << "[" << clientIP << "] Error receiving password." << std::endl;
+        close(clientSocket);
+        return;
+    }
+    buffer[bytesRead] = '\0';
+    receivedPassword = buffer;
+
+    // Check credentials
+    if (receivedUsername != USERNAME || receivedPassword != PASSWORD) {
+        std::cerr << "[" << clientIP << "] Authentication failed." << std::endl;
+        close(clientSocket);
+        return;
+    }
+
+    // Notify successful authentication
+    send(clientSocket, "AUTH_OK", strlen("AUTH_OK"), 0);
 
     // Receive filename
     bytesRead = recv(clientSocket, buffer, BUFFER_SIZE, 0);
@@ -23,7 +62,7 @@ void handleClient(int clientSocket, std::string clientIP) {
         return;
     }
     buffer[bytesRead] = '\0';
-    std::string filename(buffer);  // Store the filename received from the client
+    std::string filename(buffer); // Store the filename received from the client
 
     // Log the filename and start receiving the file
     std::cout << "[" << clientIP << "] Receiving file (" << filename << ") from client..." << std::endl;
