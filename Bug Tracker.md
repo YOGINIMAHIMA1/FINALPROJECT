@@ -89,7 +89,7 @@
 
 *  Not yet implemented.
 #                               Testing:
-* No testing has been conducted as the issue is still o
+* No testing has been conducted as the issue is still open
 
 #       3. Bug Report: File Not Received at Server End Despite Successful Transfer
 *       Reported by: Mahima Bhardwaj , Diksha Kumari, Sunny
